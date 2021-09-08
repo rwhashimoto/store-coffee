@@ -1,0 +1,8 @@
+.l-main {
+    p{
+        background-color: red;
+        @include media-sp{
+            background-color: green;
+        }
+    }
+}
