@@ -10,15 +10,15 @@
     }
     &-nav {//.l-header-nev
         display: flex;
-        gap: 24px;
         list-style: none;
         position: absolute;
         top: 15px;
-        right: 40px;
+        right: 32px;
         @include media-sp {
             top: 20px;
         }
         .nav-item {
+            padding: 5px 12px;
             color: $sub-color;
             font-size: 1.44rem;
             font-weight: bold;
