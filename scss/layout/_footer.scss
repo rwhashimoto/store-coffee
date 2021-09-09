@@ -1,0 +1,11 @@
+.l-footer {
+    margin: 190px 0 10px;
+    @include media-sp {
+        margin: 148px 0 10px;
+    }
+    .copyright {
+        color: $text-color;
+        font-size: 1.0rem;
+        text-align: center;
+    }
+}
