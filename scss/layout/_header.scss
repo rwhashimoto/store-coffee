@@ -31,19 +31,20 @@
             }
         }
     }
-    &-title {//.l-header-title
+    &-logo {//.l-header-logo
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        text-align: center;
-        color: $sub-color;
-        font-size: 11.5rem;
-        font-weight: bold;
-        letter-spacing: 2rem;
+        width: 32%;
+        height: auto;
         @include media-sp {
-            font-size: 8.45rem;
-            letter-spacing: initial;
+            width: 96%;
+        }
+        img {
+            width: 100%;
+            height: auto;
+            vertical-align: top;
         }
     }
 }
