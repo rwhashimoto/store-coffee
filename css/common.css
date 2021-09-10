@@ -409,7 +409,7 @@ a {
   height: 300px;
   justify-content: center;
   align-items: center;
-  background-position: center top;
+  background-position: center bottom;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -421,6 +421,7 @@ a {
 }
 .l-main-kv.menu {
   background-image: url(/images/main-kv_001.jpg);
+  background-position: center center;
 }
 .l-main-kv.about {
   background-image: url(/images/main-kv_002.jpg);
@@ -432,7 +433,7 @@ a {
   color: #FFF;
   font-size: 7.2rem;
   font-weight: bold;
-  filter: drop-shadow(0px 0px 10px #FFF);
+  text-shadow: 0 0 20px #FFF;
 }
 @media screen and (max-width: 768px) {
   .l-main-title {
