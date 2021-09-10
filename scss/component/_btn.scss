@@ -1,0 +1,40 @@
+.btn-more {
+    display: inline-block;
+    position: relative;
+    width: 160px;
+    height: 50px;
+    line-height: 50px;
+    color: $text-color;
+    font-size: 1.44rem;
+    &:before,
+    &:after {
+        content:'';
+        width: 20%;
+        height: 50%;
+        position: absolute;
+        display: inline-block;
+        transition: all ease-in-out 0.3s;
+    }
+    &:before {
+        border-left: solid 1px $accent-color;
+        border-top: solid 1px $accent-color;
+        top:0;
+        left: 0;
+    }
+    &::after {
+        border-right: solid 1px $accent-color;
+        border-bottom: solid 1px $accent-color;
+        bottom:0;
+        right: 0;
+    }
+    @include media-pc {
+        &:hover {
+            &:before,
+            &:after {
+                content:'';
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
