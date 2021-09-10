@@ -34,5 +34,90 @@
         display: inline-block;
         font-size: 4.0rem;
         border-bottom: solid 6px $accent-color;
+        @include media-sp {
+            font-size: 2rem;
+        }
+        &:nth-of-type(2) {//OTHER
+            margin: 87px 0 0;
+            @include media-sp {
+                margin: 38px 0 0;
+            }
+        }
+    }
+    &-menu {//.l-main-menu
+        margin: 20px 0 0;
+        .content-wrapper{
+            display: flex;
+            justify-content: space-between;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 16px;
+            @include media-sp {
+                flex-direction: column;
+            }
+        }
+        .content {
+            width: 50%;
+            text-align: center;
+            @include media-sp{
+                width: 100%;
+            }
+            &.left {
+                margin: 96px 0 0;
+                padding: 0 45px 0 55px;
+                position: relative;
+                // border-right: 1px solid $main-color;
+                @include media-sp{
+                    margin: 33px 0 0;
+                    padding: 0;
+                }
+                &:after {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    width: 1px;
+                    height: 646px;
+                    background-color: $main-color;
+                    @include media-sp{
+                        display: none;
+                    }
+                }
+            }
+            &.right {
+                margin: 96px 0 0;
+                padding: 0 34px 0 45px;
+                @include media-sp{
+                    margin: 38px 0 0;
+                    padding: 0;
+                }
+            }
+        }
+        .menu-list {
+            display: flex;
+            flex-wrap: wrap;
+            color: $text-color;
+            font-size: 1.44rem;
+            margin: 70px 0 0;
+            text-align: left;
+            @include media-sp {
+                margin: 25px 0 0;
+            }
+            .product {
+                width: 90%;
+                margin: 26px 0 0;
+                border-bottom: dotted 1px $text-color;
+                &:first-of-type {
+                    margin: 0;
+                }
+            }
+            .price {
+                width: 10%;
+                margin: 26px 0 0;
+                &:first-of-type {
+                    margin: 0;
+                }
+            }
+        }
     }
 }
