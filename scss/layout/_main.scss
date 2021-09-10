@@ -21,6 +21,7 @@
             background-image: url(/images/main-kv_003.jpg);
         }
     }
+
     &-title {//.l-main-title
         color: $sub-color;
         font-size: 7.2rem;
@@ -30,6 +31,7 @@
             font-size: 3.2rem;
         }
     }
+
     &-heading {//.l-main-heading
         display: inline-block;
         font-size: 4.0rem;
@@ -44,6 +46,7 @@
             }
         }
     }
+
     &-menu {//.l-main-menu
         margin: 20px 0 0;
         .content-wrapper{
@@ -126,7 +129,6 @@
         @include media-sp {
             margin: 109px 0 0;
         }
-        // background-color: red;
         .content-wrapper {
             margin: 83px auto 0;
             max-width: 1000px;
@@ -163,6 +165,51 @@
                     @include media-sp {
                         margin: 0;
                     }
+                }
+            }
+        }
+    }
+
+    &-location {//.l-main-location
+        margin: 154px 0 0;
+        .content {
+            max-width: 1000px;
+            margin: 83px auto 0;
+            padding: 0 16px;
+            text-align: center;
+            @include media-sp {
+                margin: 33px 0 0;
+            }
+            iframe {
+                display: block;
+                width: 100%;
+                height: 400px;
+                margin: 73px 0 0;
+                -webkit-filter: grayscale(100%);
+                -moz-filter: grayscale(100%);
+                -o-filter: grayscale(100%);
+                -ms-filter: grayscale(100%);
+                filter: grayscale(100%);
+                @include media-sp {
+                    height: 407px;
+                    margin: 19px 0 0;
+                }
+            }
+            address {
+                color: $text-color;
+                font-size: 1.44rem;
+                font-style: normal;
+                text-align: left;
+                :nth-child(1) {
+                    margin: 22px 0 0;
+                }
+                :nth-child(2) {
+                    margin: 14px 0 0;
+                }
+                :nth-child(3) {
+                    display: inline-block;
+                    margin: 15px 0 0;
+                    color: $text-color;
                 }
             }
         }
