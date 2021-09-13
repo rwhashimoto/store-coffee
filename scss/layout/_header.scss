@@ -14,6 +14,9 @@
         position: fixed;
         top: 15px;
         right: 32px;
+        max-width: 245px;
+        width: 100%;
+        font-family: "メイリオ";
         @include media-sp {
             top: 20px;
         }
@@ -36,7 +39,7 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: 32%;
+        width: 25%;
         height: auto;
         @include media-sp {
             width: 96%;

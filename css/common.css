@@ -328,7 +328,7 @@ html {
 p,
 a {
   font-size: 1.4rem;
-  line-height: 1.5;
+  line-height: 1.75;
   text-decoration: none;
 }
 
@@ -351,6 +351,9 @@ a {
   position: fixed;
   top: 15px;
   right: 32px;
+  max-width: 245px;
+  width: 100%;
+  font-family: "メイリオ";
 }
 @media screen and (max-width: 768px) {
   .l-header-nav {
@@ -377,7 +380,7 @@ a {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 32%;
+  width: 25%;
   height: auto;
 }
 @media screen and (max-width: 768px) {
@@ -443,6 +446,7 @@ a {
 }
 .l-main-heading {
   display: inline-block;
+  padding: 0 0 11px;
   font-size: 4rem;
   border-bottom: solid 6px #E03131;
 }
@@ -452,7 +456,7 @@ a {
   }
 }
 .l-main-heading:nth-of-type(2) {
-  margin: 87px 0 0;
+  margin: 95px 0 0;
 }
 @media screen and (max-width: 768px) {
   .l-main-heading:nth-of-type(2) {
@@ -475,7 +479,6 @@ a {
   }
 }
 .l-main-menu .content {
-  width: 50%;
   text-align: center;
 }
 @media screen and (max-width: 768px) {
@@ -484,6 +487,7 @@ a {
   }
 }
 .l-main-menu .content.left {
+  width: 51%;
   margin: 96px 0 0;
   padding: 0 45px 35px 55px;
   position: relative;
@@ -497,7 +501,7 @@ a {
 .l-main-menu .content.left:after {
   content: "";
   position: absolute;
-  top: 0;
+  top: -7px;
   right: 0;
   width: 1px;
   height: 646px;
@@ -509,8 +513,9 @@ a {
   }
 }
 .l-main-menu .content.right {
+  width: 48%;
   margin: 96px 0 0;
-  padding: 0 34px 35px 45px;
+  padding: 0 34px 35px 33px;
 }
 @media screen and (max-width: 768px) {
   .l-main-menu .content.right {
@@ -523,7 +528,7 @@ a {
   flex-wrap: wrap;
   color: #383E45;
   font-size: 1.44rem;
-  margin: 70px 0 0;
+  margin: 74px 0 0;
   text-align: left;
 }
 @media screen and (max-width: 768px) {
@@ -533,7 +538,7 @@ a {
 }
 .l-main-menu .menu-list .product {
   width: 90%;
-  margin: 26px 0 0;
+  margin: 33.5px 0 0;
   border-bottom: dotted 1px #383E45;
 }
 .l-main-menu .menu-list .product:first-of-type {
@@ -541,7 +546,7 @@ a {
 }
 .l-main-menu .menu-list .price {
   width: 10%;
-  margin: 26px 0 0;
+  margin: 33.5px 0 0;
 }
 .l-main-menu .menu-list .price:first-of-type {
   margin: 0;
