@@ -16,14 +16,14 @@
         transition: all ease-in-out 0.3s;
     }
     &:before {
-        border-left: solid 1px $accent-color;
-        border-top: solid 1px $accent-color;
+        border-left: solid 2px $accent-color;
+        border-top: solid 2px $accent-color;
         top:0;
         left: 0;
     }
     &::after {
-        border-right: solid 1px $accent-color;
-        border-bottom: solid 1px $accent-color;
+        border-right: solid 2px $accent-color;
+        border-bottom: solid 2px $accent-color;
         bottom:0;
         right: 0;
     }

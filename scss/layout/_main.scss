@@ -106,17 +106,16 @@
             flex-wrap: wrap;
             color: $text-color;
             font-size: 1.44rem;
-            margin: 74px 0 0;
+            margin: 70px 0 0;
             text-align: left;
             @include media-sp {
                 margin: 25px 0 0;
             }
             .product {
-                width: 90%;
+                width: 87%;
                 margin: 33.5px 0 0;
                 border-bottom: dotted 1px $text-color;
                 @include media-sp {
-                    width: 87%;
                     margin: 35.5px 0 0;
                 }
                 &:first-of-type {
@@ -124,13 +123,11 @@
                 }
             }
             .price {
-                width: 10%;
+                width: 13%;
                 margin: 33.5px 0 0;
+                padding: 0 0 0 11px;
                 @include media-sp {
-                    width: 13%;
                     margin: 35.5px 0 0;
-                    padding: 0 0 0 11px;
-                    // padding: 0 11px;
                 }
                 &:first-of-type {
                     margin: 0;
