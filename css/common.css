@@ -385,7 +385,8 @@ a {
 }
 @media screen and (max-width: 768px) {
   .l-header-logo {
-    width: 96%;
+    top: 45%;
+    width: 90%;
   }
 }
 .l-header-logo img {
@@ -399,7 +400,7 @@ a {
 }
 @media screen and (max-width: 768px) {
   .l-footer {
-    margin: 148px 0 0;
+    margin: 145px 0 0;
   }
 }
 .l-footer .copyright {
@@ -420,7 +421,7 @@ a {
 }
 @media screen and (max-width: 768px) {
   .l-main-kv {
-    height: 98px;
+    height: 95px;
   }
 }
 .l-main-kv.menu {
@@ -452,6 +453,7 @@ a {
 }
 @media screen and (max-width: 768px) {
   .l-main-heading {
+    padding: 0;
     font-size: 2rem;
   }
 }
@@ -460,11 +462,16 @@ a {
 }
 @media screen and (max-width: 768px) {
   .l-main-heading:nth-of-type(2) {
-    margin: 38px 0 0;
+    margin: 44px 0 0;
   }
 }
 .l-main-menu {
   margin: 20px 0 0;
+}
+@media screen and (max-width: 768px) {
+  .l-main-menu {
+    margin: 10px 0 0;
+  }
 }
 .l-main-menu .content-wrapper {
   display: flex;
@@ -481,11 +488,6 @@ a {
 .l-main-menu .content {
   text-align: center;
 }
-@media screen and (max-width: 768px) {
-  .l-main-menu .content {
-    width: 100%;
-  }
-}
 .l-main-menu .content.left {
   width: 51%;
   margin: 96px 0 0;
@@ -494,6 +496,7 @@ a {
 }
 @media screen and (max-width: 768px) {
   .l-main-menu .content.left {
+    width: 100%;
     margin: 33px 0 0;
     padding: 0;
   }
@@ -519,7 +522,8 @@ a {
 }
 @media screen and (max-width: 768px) {
   .l-main-menu .content.right {
-    margin: 38px 0 0;
+    width: 100%;
+    margin: 45px 0 0;
     padding: 0;
   }
 }
@@ -541,12 +545,25 @@ a {
   margin: 33.5px 0 0;
   border-bottom: dotted 1px #383E45;
 }
+@media screen and (max-width: 768px) {
+  .l-main-menu .menu-list .product {
+    width: 87%;
+    margin: 35.5px 0 0;
+  }
+}
 .l-main-menu .menu-list .product:first-of-type {
   margin: 0;
 }
 .l-main-menu .menu-list .price {
   width: 10%;
   margin: 33.5px 0 0;
+}
+@media screen and (max-width: 768px) {
+  .l-main-menu .menu-list .price {
+    width: 13%;
+    margin: 35.5px 0 0;
+    padding: 0 0 0 11px;
+  }
 }
 .l-main-menu .menu-list .price:first-of-type {
   margin: 0;
@@ -556,7 +573,7 @@ a {
 }
 @media screen and (max-width: 768px) {
   .l-main-about {
-    margin: 109px 0 0;
+    margin: 115px 0 0;
   }
 }
 .l-main-about .content-wrapper {
@@ -579,7 +596,8 @@ a {
 }
 @media screen and (max-width: 768px) {
   .l-main-about .content {
-    margin: 32px auto 40px;
+    justify-content: center;
+    margin: 25px auto 40px;
   }
 }
 .l-main-about .content .text {
@@ -589,7 +607,12 @@ a {
 }
 @media screen and (max-width: 768px) {
   .l-main-about .content .text {
-    width: 100%;
+    width: 94%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .l-main-about .content .text:nth-of-type(2) {
+    margin: 10px 0 0;
   }
 }
 .l-main-about .content .text:nth-of-type(3) {
@@ -597,7 +620,7 @@ a {
 }
 @media screen and (max-width: 768px) {
   .l-main-about .content .text:nth-of-type(3) {
-    margin: 0;
+    margin: 10px 0 0;
   }
 }
 .l-main-about .content .text:nth-of-type(4) {
@@ -605,11 +628,16 @@ a {
 }
 @media screen and (max-width: 768px) {
   .l-main-about .content .text:nth-of-type(4) {
-    margin: 0;
+    margin: 10px 0 0;
   }
 }
 .l-main-location {
   margin: 150px 0 0;
+}
+@media screen and (max-width: 768px) {
+  .l-main-location {
+    margin: 80px 0 0;
+  }
 }
 .l-main-location .content {
   max-width: 1000px;
@@ -635,7 +663,7 @@ a {
 @media screen and (max-width: 768px) {
   .l-main-location .content iframe {
     height: 407px;
-    margin: 19px 0 0;
+    margin: 22px 0 0;
   }
 }
 .l-main-location .content address {
