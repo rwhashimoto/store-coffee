@@ -408,7 +408,7 @@ a {
   text-align: center;
 }
 
-.l-main-kv {
+.l-main-parallax {
   display: flex;
   height: 300px;
   justify-content: center;
@@ -419,18 +419,18 @@ a {
   background-size: cover;
 }
 @media screen and (max-width: 768px) {
-  .l-main-kv {
+  .l-main-parallax {
     height: 95px;
   }
 }
-.l-main-kv.menu {
+.l-main-parallax.menu {
   background-image: url(/images/main-kv_001.jpg);
   background-position: center center;
 }
-.l-main-kv.about {
+.l-main-parallax.about {
   background-image: url(/images/main-kv_002.jpg);
 }
-.l-main-kv.location {
+.l-main-parallax.location {
   background-image: url(/images/main-kv_003.jpg);
 }
 .l-main-title {
