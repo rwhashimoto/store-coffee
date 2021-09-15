@@ -67,7 +67,7 @@
         }
         .content {
             text-align: center;
-            &.left {
+            &:first-of-type {
                 width: 51%;
                 margin: 96px 0 0;
                 padding: 0 45px 35px 55px;
@@ -90,7 +90,7 @@
                     }
                 }
             }
-            &.right {
+            &:last-of-type {
                 width: 48%;
                 margin: 96px 0 0;
                 padding: 0 34px 35px 33px;
