@@ -2,7 +2,7 @@
     position: relative;
     width: 100%;
     min-height: 100vh;
-    background: url(/images/head-kv_001.jpg);
+    background: url(../images/head-kv_001.jpg);
     background-size: cover;
     background-position: center;
     @include media-sp {
@@ -11,7 +11,7 @@
     &-nav {//.l-header-nev
         display: flex;
         list-style: none;
-        position: fixed;
+        position: absolute;
         top: 15px;
         right: 32px;
         max-width: 245px;
