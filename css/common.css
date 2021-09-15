@@ -408,7 +408,7 @@ a {
   text-align: center;
 }
 
-.l-main-parallax {
+.l-main-section-visual {
   display: flex;
   height: 300px;
   justify-content: center;
@@ -419,19 +419,19 @@ a {
   background-size: cover;
 }
 @media screen and (max-width: 768px) {
-  .l-main-parallax {
+  .l-main-section-visual {
     height: 95px;
   }
 }
-.l-main-parallax.menu {
-  background-image: url(/images/main-kv_001.jpg);
+.l-main-section-visual.menu {
+  background-image: url(../images/main-kv_001.jpg);
   background-position: center center;
 }
-.l-main-parallax.about {
-  background-image: url(/images/main-kv_002.jpg);
+.l-main-section-visual.about {
+  background-image: url(../images/main-kv_002.jpg);
 }
-.l-main-parallax.location {
-  background-image: url(/images/main-kv_003.jpg);
+.l-main-section-visual.location {
+  background-image: url(../images/main-kv_003.jpg);
 }
 .l-main-title {
   color: #FFF;

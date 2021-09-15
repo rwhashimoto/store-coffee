@@ -1,5 +1,5 @@
 .l-main {
-    &-parallax {//.l-main-parallax
+    &-section-visual {//.l-main-content-visual
         display: flex;
         height: 300px;
         justify-content: center;
@@ -12,14 +12,14 @@
             height: 95px;
         }
         &.menu {
-            background-image: url(/images/main-kv_001.jpg);
+            background-image: url(../images/main-kv_001.jpg);
             background-position: center center;
         }
         &.about {
-            background-image: url(/images/main-kv_002.jpg);
+            background-image: url(../images/main-kv_002.jpg);
         }
         &.location {
-            background-image: url(/images/main-kv_003.jpg);
+            background-image: url(../images/main-kv_003.jpg);
         }
     }
 
