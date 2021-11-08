@@ -98,6 +98,7 @@
 				</address>
 			</div>
 		</section><!-- /.l-main-location -->
+		<div id="top-btn" class="top-btn">TOP</div>
 	</main>
 
 <?php get_footer(); ?>
