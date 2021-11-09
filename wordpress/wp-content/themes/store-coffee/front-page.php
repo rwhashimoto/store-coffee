@@ -105,12 +105,23 @@
 			</div>
 			<div class="content">
 				<div class="news-list">
+					<?php
+						$args = array(
+						'post_type' => 'news',
+						'posts_per_page' => 3,
+						);
+						$news_query = new WP_Query($args);
+						if($news_query->have_posts()):
+						while($news_query->have_posts()):
+						$news_query->the_post();
+					?>
 					<dl>
-						<dt>日付</dt>
-						<dd>タイトル</dd>
+						<dt><?= get_the_date(); ?></dt>
+						<dd><?= get_the_title(); ?></dd>
 					</dl>
+					<?php endwhile; endif; ?>
 				</div>
-				<a href="DUMMY" target="_blank" class="btn-more">Read More</a>
+				<a href="<?php echo home_url('/news/'); ?>" target="_blank" class="btn-more">Read More</a>
 			</div>
 		</section><!-- /.l-main-location -->
 	</main>
