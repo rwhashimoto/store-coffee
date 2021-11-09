@@ -850,6 +850,14 @@ a {
 .archive-news .news-list dl dd a {
   color: #000;
 }
+@media screen and (min-width: 769px) {
+  .archive-news .news-list dl dd a {
+    transition: all ease-in-out 0.3s;
+  }
+  .archive-news .news-list dl dd a:hover {
+    color: #E03131;
+  }
+}
 
 .single-news {
   margin: 0;
