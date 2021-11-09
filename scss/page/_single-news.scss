@@ -1,0 +1,18 @@
+.single-news {
+    margin: 0;
+    @include media-sp {
+        margin: 0;
+    }
+    .content {
+        max-width: 1000px;
+        margin: 83px auto 0;
+        padding: 0 16px;
+        text-align: center;
+        @include media-sp {
+            margin: 33px 0 0;
+        }
+        .entry-field{
+            margin: 0 0 50px;
+        }
+    }
+}
