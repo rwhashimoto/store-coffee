@@ -98,6 +98,21 @@
 				</address>
 			</div>
 		</section><!-- /.l-main-location -->
+
+		<section id="news" class="l-main-news">
+			<div class="l-main-section-visual news">
+				<h2 class="l-main-title">NEWS</h2>
+			</div>
+			<div class="content">
+				<div class="news-list">
+					<dl>
+						<dt>日付</dt>
+						<dd>タイトル</dd>
+					</dl>
+				</div>
+				<a href="DUMMY" target="_blank" class="btn-more">Read More</a>
+			</div>
+		</section><!-- /.l-main-location -->
 	</main>
 
 <?php get_footer(); ?>

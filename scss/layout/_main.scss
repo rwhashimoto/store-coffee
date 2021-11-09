@@ -21,6 +21,9 @@
         &.location {
             background-image: url(../images/main-kv_003.jpg);
         }
+        &.news {
+            background-image: url(../images/main-kv_004.jpg);
+        }
     }
 
     &-title {//.l-main-title
@@ -231,6 +234,42 @@
                     display: inline-block;
                     margin: 5px 0 0;
                     color: $text-color;
+                }
+            }
+        }
+    }
+    &-news {//.l-main-news
+        margin: 150px 0 0;
+        @include media-sp {
+            margin: 80px 0 0;
+        }
+        .content {
+            max-width: 1000px;
+            margin: 83px auto 0;
+            padding: 0 16px;
+            text-align: center;
+            @include media-sp {
+                margin: 33px 0 0;
+            }
+        }
+        .news-list {
+            text-align: left;
+            margin-bottom: 50px;
+            dl {
+                padding: 37px;
+                border-bottom: solid 1.5px $border-color;
+                &:first-of-type {
+                    border-top: solid 1.5px $border-color;
+                }
+                @include media-sp {
+                    padding: 18.5px;
+                }
+                dt {
+                    font-size: 1.4rem;
+                }
+                dd {
+                    padding: 10px 0 0;
+                    font-size: 1.4rem;
                 }
             }
         }
