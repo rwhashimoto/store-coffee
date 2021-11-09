@@ -1,6 +1,9 @@
 <?php get_header(); ?>
 
 	<main class="l-main">
+		<section class="l-main-kv">
+			<h1 class="logo"><img src="<?= get_template_directory_uri(); ?>/assets/images/common/logo_001.svg" alt="COFFEE"></h1>
+		</section>
 		<section id="menu" class="l-main-menu">
 			<div class="l-main-section-visual menu">
 				<h2 class="l-main-title">MENU</h2>

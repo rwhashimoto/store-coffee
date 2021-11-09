@@ -24,5 +24,4 @@
 					<li><a class="nav-item" href="#location">LOCATION</a></li>
 				</ul>
 			</nav>
-			<h1 class="l-header-logo"><img src="<?= get_template_directory_uri(); ?>/assets/images/common/logo_001.svg" alt="COFFEE"></h1>
 		</header>

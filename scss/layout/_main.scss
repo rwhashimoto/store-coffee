@@ -1,4 +1,32 @@
 .l-main {
+    &-kv {//.l-main-kv
+        position: relative;
+        width: 100%;
+        min-height: 100vh;
+        background: url(../images/head-kv_001.jpg);
+        background-size: cover;
+        background-position: center;
+        @include media-sp {
+            background-position: 47% center;
+        }
+        .logo {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 25%;
+            height: auto;
+            @include media-sp {
+                top: 45%;
+                width: 90%;
+            }
+            img {
+                width: 100%;
+                height: auto;
+                vertical-align: top;
+            }
+        }
+    }
     &-section-visual {//.l-main-content-visual
         display: flex;
         height: 300px;
