@@ -1,5 +1,14 @@
 <?php get_header(); ?>
 
-<?php the_content(); ?>
+<section id="news" class="l-main-news">
+	<div class="l-main-section-visual news">
+		<h1 class="l-main-title">NEWS</h2>
+	</div>
+	<div class="content">
+        <h2><?= get_the_title(); ?></h2>
+        <p><?= get_the_date(); ?></p>
+        <div><?php the_content(); ?></div>
+	</div>
+</section><!-- /.l-main-news -->
 
 <?php get_footer(); ?>
