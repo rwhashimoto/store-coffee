@@ -840,10 +840,15 @@ a {
 }
 .archive-news .news-list dl dt {
   font-size: 1.4rem;
+  font-weight: bold;
 }
 .archive-news .news-list dl dd {
   padding: 10px 0 0;
   font-size: 1.4rem;
+  font-weight: bold;
+}
+.archive-news .news-list dl dd a {
+  color: #000;
 }
 
 .single-news {
