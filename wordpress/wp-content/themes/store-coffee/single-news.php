@@ -9,6 +9,7 @@
         <p><?= get_the_date(); ?></p>
         <div><?php the_content(); ?></div>
 	</div>
+    <a href="<?php echo home_url('/news/'); ?>" class="btn-more">BACK</a>
 </section><!-- /.l-main-news -->
 
 <?php get_footer(); ?>
