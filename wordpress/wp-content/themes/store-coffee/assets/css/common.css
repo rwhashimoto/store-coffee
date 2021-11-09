@@ -856,7 +856,7 @@ a {
 }
 .single-news .content {
   max-width: 1000px;
-  margin: 83px auto 0;
+  margin: 100px auto 0;
   padding: 0 16px;
   text-align: center;
 }
@@ -865,6 +865,17 @@ a {
     margin: 33px 0 0;
   }
 }
+.single-news .content .title {
+  font-size: 6rem;
+  font-weight: bold;
+  text-align: left;
+}
+.single-news .content .date {
+  margin: 20px 0 0;
+  font-size: 1.4rem;
+  text-align: left;
+}
 .single-news .content .entry-field {
   margin: 0 0 50px;
+  text-align: left;
 }
