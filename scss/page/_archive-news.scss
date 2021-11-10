@@ -4,80 +4,10 @@
         margin: 0;
     }
     .content {
-        max-width: 1000px;
         min-height: calc(100vh - 595px);
         margin: 90px auto 0;
-        padding: 0 16px;
-        text-align: center;
         @include media-sp {
-            margin: 33px 0 0;
-        }
-    }
-    .news-list {
-        text-align: left;
-        margin-bottom: 50px;
-        dl {
-            position: relative;
-            border-bottom: solid 1.5px $border-color;
-            padding: 0px;
-            &:first-of-type {
-                border-top: solid 1.5px $border-color;
-            }
-            a {
-                display: block;
-                color: $main-color;
-                padding: 37px;
-                @include media-sp {
-                    padding: 18.5px;
-                }
-                &::before {
-                    content: "";
-                    margin: auto;
-                    position: absolute;
-                    top: 0;
-                    bottom: 0;
-                    right: 30px;
-                    width: 6px;
-                    height: 6px;
-                    border-top: 1px solid $main-color;
-                    border-right: 1px solid $main-color;
-                    transform: rotate(45deg);
-                }
-                &::after {
-                    content: "";
-                    margin: auto;
-                    position: absolute;
-                    top: 0;
-                    bottom: 0;
-                    right: 30px;
-                    width: 7px;
-                    height: 1px;
-                    background: $main-color;
-                    transform: rotate(90deg);
-                }
-                @include media-pc {
-                    transition: all ease-in-out 0.3s;
-                    &:hover {
-                        color: $accent-color;
-                        &::before {
-                            border-top: 1px solid $accent-color;
-                            border-right: 1px solid $accent-color;
-                        }
-                        &::after {
-                            background: $accent-color;
-                        }
-                    }
-                }
-            }
-            dt {
-                font-size: 1.4rem;
-                font-weight: bold;
-            }
-            dd {
-                padding: 10px 0 0;
-                font-size: 1.4rem;
-                font-weight: bold;
-            }
+            margin: 45px 0 0;
         }
     }
 }
