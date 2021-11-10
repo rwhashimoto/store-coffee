@@ -17,13 +17,24 @@
         text-align: left;
         margin-bottom: 50px;
         dl {
-            padding: 37px;
             border-bottom: solid 1.5px $border-color;
+            padding: 0px;
             &:first-of-type {
                 border-top: solid 1.5px $border-color;
             }
-            @include media-sp {
-                padding: 18.5px;
+            a {
+                display: block;
+                color: $main-color;
+                padding: 37px;
+                @include media-sp {
+                    padding: 18.5px;
+                }
+                @include media-pc {
+                    transition: all ease-in-out 0.3s;
+                    &:hover {
+                        color: $accent-color;
+                    }
+                }
             }
             dt {
                 font-size: 1.4rem;
@@ -33,15 +44,6 @@
                 padding: 10px 0 0;
                 font-size: 1.4rem;
                 font-weight: bold;
-                a {
-                    color: $main-color;
-                    @include media-pc {
-                        transition: all ease-in-out 0.3s;
-                        &:hover {
-                            color: $accent-color;
-                        }
-                    }
-                }
             }
         }
     }

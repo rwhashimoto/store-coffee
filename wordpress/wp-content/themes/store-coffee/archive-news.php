@@ -17,8 +17,10 @@
 				$news_query->the_post();
 			?>
 			<dl>
-				<dt><?= get_the_date(); ?></dt>
-				<dd><a href="<?php the_permalink(); ?>"><?= get_the_title(); ?></a></dd>
+				<a href="<?php the_permalink(); ?>">
+					<dt><?= get_the_date(); ?></dt>
+					<dd><?= get_the_title(); ?></dd>
+				</a>
 			</dl>
 			<?php endwhile; endif; ?>
         </div>
