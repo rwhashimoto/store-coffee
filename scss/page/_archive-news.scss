@@ -5,6 +5,7 @@
     }
     .content {
         max-width: 1000px;
+        min-height: calc(100vh - 595px);
         margin: 90px auto 0;
         padding: 0 16px;
         text-align: center;
