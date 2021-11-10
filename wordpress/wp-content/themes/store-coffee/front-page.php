@@ -126,7 +126,7 @@
 				</div>
 				<a href="<?php echo home_url('/news/'); ?>" target="_blank" class="btn-more">Read More</a>
 			</div>
-		</section><!-- /.l-main-location -->
+		</section><!-- /.l-main-news -->
 	</main>
 
 <?php get_footer(); ?>

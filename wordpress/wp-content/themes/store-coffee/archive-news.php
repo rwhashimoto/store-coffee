@@ -23,6 +23,6 @@
 			<?php endwhile; endif; ?>
         </div>
 	</div>
-</section><!-- /.l-main-news -->
+</section>
 
 <?php get_footer(); ?>
