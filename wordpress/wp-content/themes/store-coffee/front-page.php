@@ -127,7 +127,7 @@
 				<?php endwhile;
 				endif; ?>
 			</div>
-			<a href="<?php echo home_url('/news/'); ?>" target="_blank" class="btn-more">Read More</a>
+			<a href="<?php echo home_url('/news/'); ?>" class="btn-more">Read More</a>
 		</div>
 	</section><!-- /.l-main-news -->
 </main>
