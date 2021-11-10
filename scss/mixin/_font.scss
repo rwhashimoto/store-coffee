@@ -1,0 +1,13 @@
+@mixin fz($size: 16) {
+    font-size: ($size / 10) + rem;
+}
+html {
+    font-size: 62.5%;
+    font-family: $font-family;
+}
+p,
+a {
+    @include fz(14);
+    line-height: 1.75;
+    text-decoration: none;
+}
