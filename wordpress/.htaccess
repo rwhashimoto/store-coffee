@@ -13,4 +13,9 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /index.php [L]
 </IfModule>
 
+php_value memory_limit 100M
+php_value post_max_size 90M
+php_value upload_max_filesize 80M
+
+
 # END WordPress
