@@ -651,14 +651,14 @@ a {
     margin: 33px 0 0;
   }
 }
-.l-main-location .content .content-inner {
+.l-main-location .content .content-flex {
   display: flex;
   gap: 75px;
   align-items: center;
   margin: 130px 0 0;
 }
 @media screen and (max-width: 768px) {
-  .l-main-location .content .content-inner {
+  .l-main-location .content .content-flex {
     margin: 65px 0 0;
   }
 }
@@ -966,7 +966,7 @@ a {
     margin: 35px 0 0;
   }
 }
-.page-location .content .lead {
+.page-location .content .lead-sentence p {
   font-size: 1rem;
 }
 .page-location .content iframe {

@@ -21,8 +21,10 @@
                 margin: 35px 0 0;
             }
         }
-        .lead {
-            font-size: 1.0rem;
+        .lead-sentence {
+            p {
+                font-size: 1.0rem;
+            }
         }
         iframe {
             display: block;
