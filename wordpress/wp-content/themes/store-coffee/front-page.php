@@ -77,30 +77,15 @@
 						テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
 					</p>
 				</div><!-- /.content -->
-				<a href="DUMMY" target="_blank" class="btn-more">Read More</a>
+				<a href="<?php echo home_url('/about/'); ?>" target="_blank" class="btn-more">Read More</a>
 			</div><!-- /.content-wrapper -->
 		</section><!-- /.l-man-about -->
 
-		<section id="location" class="l-main-location">
-			<div class="l-main-section-visual location">
-				<h2 class="l-main-title">LOCATION</h2>
-			</div>
-			<div class="content">
-				<h3 class="l-main-heading">OUR STORE</h3>
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3242.3141167384097!2d139.70497506554915!3d35.6446317802028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b40ba660b1b%3A0x8858088b6942f55f!2z44CSMTUwLTAwMjIg5p2x5Lqs6YO95riL6LC35Yy65oG15q-U5a-_5Y2X!5e0!3m2!1sja!2sjp!4v1631173724943!5m2!1sja!2sjp" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-				<address>
-					<p>
-						X-XX-XX, Ebisuminami, Shibuya-ku, Tokyo 150-0022<br>
-						東京都渋谷区恵比寿南X-XX-XX
-					</p>
-					<p>
-						Open 7 days a Week<br>
-						9:00am to 10:00pm
-					</p>
-					<a href="tel:XX-XXXX-XXXX">Tel : XX-XXXX-XXXX</a>
-				</address>
-			</div>
-		</section><!-- /.l-main-location -->
+		<?php
+			$page_id = 17;
+			$alternative_post = get_post( $page_id );
+			echo apply_filters('the_content', $alternative_post->post_content);
+		?><!-- /.l-main-location -->
 
 		<section id="news" class="l-main-news">
 			<div class="l-main-section-visual news">
