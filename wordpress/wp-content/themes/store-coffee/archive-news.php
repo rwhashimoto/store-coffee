@@ -9,7 +9,7 @@
 			<?php
 				$args = array(
 				'post_type' => 'news',
-				'posts_per_page' => 10,
+				'posts_per_page' => -1,
 				);
 				$news_query = new WP_Query($args);
 				if($news_query->have_posts()):
