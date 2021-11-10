@@ -895,3 +895,31 @@ a {
   margin: 0 0 50px;
   text-align: left;
 }
+
+.page-about {
+  margin: 0;
+}
+@media screen and (max-width: 768px) {
+  .page-about {
+    margin: 0;
+  }
+}
+.page-about .l-main-heading {
+  margin: 87px 0 0;
+}
+.page-about .l-main-heading:first-of-type {
+  margin: 0;
+}
+@media screen and (max-width: 768px) {
+  .page-about .l-main-heading {
+    margin: 30px 0 0;
+  }
+}
+.page-about .content-wrapper {
+  margin: 90px auto 0;
+}
+@media screen and (max-width: 768px) {
+  .page-about .content-wrapper {
+    margin: 45px auto 0;
+  }
+}
