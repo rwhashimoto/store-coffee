@@ -62,21 +62,17 @@
 				<h2 class="l-main-title">ABOUT</h2>
 			</div>
 			<div class="content-wrapper">
-				<h3 class="l-main-heading">COFFEE</h3>
-				<div class="content">
-					<p class="text">
-						テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-					</p>
-					<p class="text">
-						テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-					</p>
-					<p class="text">
-						テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-					</p>
-					<p class="text">
-						テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-					</p>
-				</div><!-- /.content -->
+                <?php
+					$page_id = 34;
+					$alternative_post = get_post( $page_id );
+				?>
+				<h3 class="l-main-heading"><?= get_the_title( $page_id ); ?></h3>
+                <div class="content">
+                    <?php
+                        echo $content -> post_content;
+                        echo apply_filters('the_content', $alternative_post->post_content);
+                    ?>
+                </div>
 				<a href="<?php echo home_url('/about/'); ?>" target="_blank" class="btn-more">Read More</a>
 			</div><!-- /.content-wrapper -->
 		</section><!-- /.l-man-about -->
