@@ -2,7 +2,7 @@
 
 <section id="location" class="l-main-location page-location">
 	<div class="l-main-section-visual location">
-		<h2 class="l-main-title">LOCATION</h2>
+		<h1 class="l-main-title">LOCATION</h1>
 	</div>
 	<div class="content">
 		<p class="lead">テキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキスト<br>
