@@ -2,7 +2,7 @@
 
 <section id="news" class="l-main-news archive-news">
 	<div class="l-main-section-visual news">
-		<h2 class="l-main-title">NEWS</h2>
+		<h1 class="l-main-title">NEWS</h1>
 	</div>
 	<div class="content">
 		<div class="news-list">
