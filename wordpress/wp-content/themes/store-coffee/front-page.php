@@ -73,7 +73,7 @@
 				echo apply_filters('the_content', $alternative_post->post_content);
 				?>
 			</div>
-			<a href="<?php echo home_url('/about/'); ?>" target="_blank" class="btn-more">Read More</a>
+			<a href="<?= home_url('/about/'); ?>" target="_blank" class="btn-more">Read More</a>
 		</div><!-- /.content-wrapper -->
 	</section><!-- /.l-man-about -->
 
@@ -128,7 +128,7 @@
 				<?php endwhile;
 				endif; ?>
 			</div>
-			<a href="<?php echo home_url('/news/'); ?>" target="_blank" class="btn-more">Read More</a>
+			<a href="<?= home_url('/news/'); ?>" target="_blank" class="btn-more">Read More</a>
 		</div>
 	</section><!-- /.l-main-location -->
 </main>
