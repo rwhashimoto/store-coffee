@@ -2,7 +2,7 @@
 
 <main class="l-main">
 	<section class="l-main-kv">
-		<h1 class="logo"><img src="<?= get_template_directory_uri(); ?>/assets/images/common/logo_001.svg" alt="COFFEE"></h1>
+		<h1 class="logo"><img src="<?= get_template_directory_uri(); ?>/assets/images/common/logo_001.svg" alt="COFFEE" width="460" height="100"></h1>
 	</section>
 	<section id="menu" class="l-main-menu">
 		<div class="l-main-section-visual menu">
@@ -85,7 +85,7 @@
 			<h3 class="l-main-heading">OUR STORE</h3>
 			<div class="content-flex">
 				<figure class="info-img">
-					<img src="<?= get_template_directory_uri(); ?>/assets/images/location_001.jpg" alt="location_001">
+					<img src="<?= get_template_directory_uri(); ?>/assets/images/location_001.jpg" alt="location_001" width="484" height="407" >
 				</figure>
 				<div class="info">
 					<address>
