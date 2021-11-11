@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<section id="location" class="l-main-location page-location">
+<section id="location" class="page-location">
 	<div class="l-main-section-visual location">
 		<h1 class="l-main-title">LOCATION</h1>
 	</div>

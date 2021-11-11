@@ -12,10 +12,6 @@
             margin: 33px 0 0;
         }
         .content-flex {
-            display: flex;
-            flex-direction: column;
-            gap: 22px;
-            align-items: start;
             margin: 70px 0 0;
             @include media-sp {
                 margin: 35px 0 0;
@@ -46,7 +42,7 @@
             font-style: normal;
             text-align: left;
             :nth-child(1) {
-                margin: 18px 0 0;
+                margin: 22px 0 0;
             }
             :nth-child(2) {
                 margin: 5px 0 0;
