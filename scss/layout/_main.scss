@@ -238,21 +238,15 @@
                 align-items: center;
                 margin: 130px 0 0;
                 @include media-sp {
+                    flex-direction: column;
+                    gap: 35px;
                     margin: 65px 0 0;
                 }
             }
-            iframe {
-                display: block;
-                width: 484px;
-                height: 407px;
-                -webkit-filter: grayscale(100%);
-                -moz-filter: grayscale(100%);
-                -o-filter: grayscale(100%);
-                -ms-filter: grayscale(100%);
-                filter: grayscale(100%);
-                @include media-sp {
-                    height: 407px;
-                    margin: 22px 0 0;
+            .info-img {
+                img {
+                    width: 100%;
+                    height: auto;
                 }
             }
             address {

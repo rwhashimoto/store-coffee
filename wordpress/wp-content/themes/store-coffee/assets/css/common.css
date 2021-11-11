@@ -659,23 +659,14 @@ a {
 }
 @media screen and (max-width: 768px) {
   .l-main-location .content .content-flex {
+    flex-direction: column;
+    gap: 35px;
     margin: 65px 0 0;
   }
 }
-.l-main-location .content iframe {
-  display: block;
-  width: 484px;
-  height: 407px;
-  -moz-filter: grayscale(100%);
-  -o-filter: grayscale(100%);
-  -ms-filter: grayscale(100%);
-  filter: grayscale(100%);
-}
-@media screen and (max-width: 768px) {
-  .l-main-location .content iframe {
-    height: 407px;
-    margin: 22px 0 0;
-  }
+.l-main-location .content .info-img img {
+  width: 100%;
+  height: auto;
 }
 .l-main-location .content address {
   margin-bottom: 40px;
