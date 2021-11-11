@@ -249,22 +249,24 @@
                     height: auto;
                 }
             }
-            address {
-                margin-bottom: 40px;
-                color: $text-color;
-                font-size: 1.44rem;
-                font-style: normal;
-                text-align: left;
-                :nth-child(1) {
-                    margin: 18px 0 0;
-                }
-                :nth-child(2) {
-                    margin: 5px 0 0;
-                }
-                :nth-child(3) {
-                    display: inline-block;
-                    margin: 5px 0 0;
+            .info-text {
+                address {
+                    margin-bottom: 40px;
                     color: $text-color;
+                    font-size: 1.44rem;
+                    font-style: normal;
+                    text-align: left;
+                    :nth-child(1) {
+                        margin: 18px 0 0;
+                    }
+                    :nth-child(2) {
+                        margin: 5px 0 0;
+                    }
+                    :nth-child(3) {
+                        display: inline-block;
+                        margin: 5px 0 0;
+                        color: $text-color;
+                    }
                 }
             }
         }

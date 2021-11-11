@@ -668,20 +668,20 @@ a {
   width: 100%;
   height: auto;
 }
-.l-main-location .content address {
+.l-main-location .content .info-text address {
   margin-bottom: 40px;
   color: #383E45;
   font-size: 1.44rem;
   font-style: normal;
   text-align: left;
 }
-.l-main-location .content address :nth-child(1) {
+.l-main-location .content .info-text address :nth-child(1) {
   margin: 18px 0 0;
 }
-.l-main-location .content address :nth-child(2) {
+.l-main-location .content .info-text address :nth-child(2) {
   margin: 5px 0 0;
 }
-.l-main-location .content address :nth-child(3) {
+.l-main-location .content .info-text address :nth-child(3) {
   display: inline-block;
   margin: 5px 0 0;
   color: #383E45;

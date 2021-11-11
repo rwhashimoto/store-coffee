@@ -87,7 +87,7 @@
 				<figure class="info-img">
 					<img src="<?= get_template_directory_uri(); ?>/assets/images/location_001.jpg" alt="location_001" width="484" height="407" >
 				</figure>
-				<div class="info">
+				<div class="info-text">
 					<address>
 						<p>
 							X-XX-XX, Ebisuminami, Shibuya-ku, Tokyo 150-0022<br>
