@@ -16,7 +16,7 @@
                     "class": "",
                     "id": ""
                 },
-                "return_format": "array",
+                "return_format": "url",
                 "preview_size": "medium",
                 "library": "all",
                 "min_width": "",
@@ -26,25 +26,6 @@
                 "max_height": "",
                 "max_size": "",
                 "mime_types": ""
-            },
-            {
-                "key": "field_618cd27ecfa3e",
-                "label": "menu",
-                "name": "menu",
-                "type": "text",
-                "instructions": "",
-                "required": 1,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "placeholder": "",
-                "prepend": "",
-                "append": "",
-                "maxlength": ""
             },
             {
                 "key": "field_618cd2e2cfa3f",
@@ -66,6 +47,31 @@
                 "min": "",
                 "max": "",
                 "step": ""
+            },
+            {
+                "key": "field_618ce142fa412",
+                "label": "COFEE or FOOD or OTHTER？",
+                "name": "menu-category",
+                "type": "radio",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "coffee": "COFFEE",
+                    "food": "FOOD",
+                    "other": "OTHER"
+                },
+                "allow_null": 0,
+                "other_choice": 0,
+                "default_value": "",
+                "layout": "horizontal",
+                "return_format": "array",
+                "save_other_choice": 0
             }
         ],
         "location": [
