@@ -63,16 +63,12 @@
 		</div>
 		<div class="content-wrapper">
 			<?php
-			$page_id = 34;
-			$alternative_post = get_post($page_id);
+			$page_data = get_page_by_path('/about/coffee/');
+			$page = get_post($page_data);
+			$content = $page->post_content;
 			?>
-			<h3 class="l-main-heading"><?= get_the_title($page_id); ?></h3>
-			<div class="content">
-				<?php
-				echo $content->post_content;
-				echo apply_filters('the_content', $alternative_post->post_content);
-				?>
-			</div>
+			<h3 class="l-main-heading"><?= get_the_title($page); ?></h3>
+			<div class="content"><?= $content; ?></div>
 			<a href="<?= home_url('/about/'); ?>" target="_blank" class="btn-more">Read More</a>
 		</div><!-- /.content-wrapper -->
 	</section><!-- /.l-man-about -->
@@ -85,7 +81,7 @@
 			<h3 class="l-main-heading">OUR STORE</h3>
 			<div class="content-flex">
 				<figure class="info-img">
-					<img src="<?= get_template_directory_uri(); ?>/assets/images/location_001.jpg" alt="location_001" width="484" height="407" >
+					<img src="<?= get_template_directory_uri(); ?>/assets/images/location_001.jpg" alt="location_001" width="484" height="407">
 				</figure>
 				<div class="info-text">
 					<address>
