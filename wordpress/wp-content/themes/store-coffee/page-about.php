@@ -7,44 +7,36 @@
 	<div class="l-main-section-visual about">
 		<h2 class="l-main-title">ABOUT</h2>
 	</div>
+	<?php
+		$page_data = get_page_by_path('/about/coffee/');
+		$page = get_post($page_data);
+		$content = $page->post_content;
+		?>
+	<div class="content-wrapper">
+		<h3 class="l-main-heading"><?= get_the_title($page); ?></h3>
+		<div class="content"><?= $content; ?></div>
+	</div><!-- /.content-wrapper -->
 
 	<div class="content-wrapper">
-        <?php
-			$page_id = 34;//coffee
-			$alternative_post = get_post( $page_id );
+		<?php
+		$page_data = get_page_by_path('/about/food/');
+		$page = get_post($page_data);
+		$content = $page->post_content;
 		?>
-		<h3 class="l-main-heading"><?= get_the_title( $page_id ); ?></h3>
-        <div class="content">
-            <?php
-                echo $content -> post_content;
-                echo apply_filters('the_content', $alternative_post->post_content);
-            ?>
-        </div>
+		<h3 class="l-main-heading"><?= get_the_title($page); ?></h3>
+		<div class="content"><?= $content; ?></div>
 	</div><!-- /.content-wrapper -->
 
-    <div class="content-wrapper">
-        <?php
-			$page_id = 39;//food
-			$alternative_post = get_post( $page_id );
-		?>
-		<h3 class="l-main-heading"><?= get_the_title( $page_id ); ?></h3>
+	<div class="content-wrapper">
 		<?php
-			echo $content -> post_content;
-			echo apply_filters('the_content', $alternative_post->post_content);
+		$page_data = get_page_by_path('/about/other/');
+		$page = get_post($page_data);
+		$content = $page->post_content;
 		?>
+		<h3 class="l-main-heading"><?= get_the_title($page); ?></h3>
+		<div class="content"><?= $content; ?></div>
 	</div><!-- /.content-wrapper -->
 
-    <div class="content-wrapper">
-        <?php
-			$page_id = 41;//other
-			$alternative_post = get_post( $page_id );
-		?>
-		<h3 class="l-main-heading"><?= get_the_title( $page_id ); ?></h3>
-		<?php
-			echo $content -> post_content;
-			echo apply_filters('the_content', $alternative_post->post_content);
-		?>
-	</div><!-- /.content-wrapper -->
 </section><!-- /.l-man-about -->
 
 <?php get_footer(); ?>
