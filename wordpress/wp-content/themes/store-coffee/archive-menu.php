@@ -23,10 +23,9 @@
 			?>
 					<li class="menu-item">
 						<?php if ($cat == 'coffee') : ?>
-							<figure figure class="thumbnail"><img src="<?= $thumbnail ?>" alt=""></figure>
+							<figure class="thumbnail"><img src="<?= $thumbnail ?>" alt=""></figure>
 							<p class="title"><?= get_the_title(); ?></p>
 							<p class="price">&yen;<?= $menu_price ?></p>
-							<p class="price"><?= $cat ?></p>
 						<?php endif; ?>
 					</li>
 			<?php endwhile;
@@ -51,10 +50,9 @@
 			?>
 					<li class="menu-item">
 						<?php if ($cat == 'food') : ?>
-							<figure figure class="thumbnail"><img src="<?= $thumbnail ?>" alt=""></figure>
+							<figure class="thumbnail"><img src="<?= $thumbnail ?>" alt=""></figure>
 							<p class="title"><?= get_the_title(); ?></p>
 							<p class="price">&yen;<?= $menu_price ?></p>
-							<p class="price"><?= $cat ?></p>
 						<?php endif; ?>
 					</li>
 			<?php endwhile;
@@ -79,16 +77,16 @@
 			?>
 					<li class="menu-item">
 						<?php if ($cat == 'other') : ?>
-							<figure figure class="thumbnail"><img src="<?= $thumbnail ?>" alt=""></figure>
+							<figure class="thumbnail"><img src="<?= $thumbnail ?>" alt=""></figure>
 							<p class="title"><?= get_the_title(); ?></p>
 							<p class="price">&yen;<?= $menu_price ?></p>
-							<p class="price"><?= $cat ?></p>
 						<?php endif; ?>
 					</li>
 			<?php endwhile;
 			endif;
 			wp_reset_postdata(); ?>
 		</ul>
+	</div><!-- .content -->
 </section>
 
 <?php get_footer(); ?>
