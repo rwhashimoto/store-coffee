@@ -4,26 +4,36 @@
 	<div class="l-main-section-visual news">
 		<h1 class="l-main-title">NEWS</h1>
 	</div>
+
+	<div class="breadcrumb-area">
+		<?php
+		if (function_exists('bcn_display')) {
+			bcn_display();
+		}
+		?>
+	</div>
+
 	<div class="content">
 		<div class="news-list">
 			<?php
-				$args = array(
+			$args = array(
 				'post_type' => 'news',
 				'posts_per_page' => -1,
-				);
-				$news_query = new WP_Query($args);
-				if($news_query->have_posts()):
-				while($news_query->have_posts()):
-				$news_query->the_post();
+			);
+			$news_query = new WP_Query($args);
+			if ($news_query->have_posts()) :
+				while ($news_query->have_posts()) :
+					$news_query->the_post();
 			?>
-			<dl>
-				<a href="<?php the_permalink(); ?>">
-					<dt><?= get_the_date(); ?></dt>
-					<dd><?= get_the_title(); ?></dd>
-				</a>
-			</dl>
-			<?php endwhile; endif; ?>
-        </div>
+					<dl>
+						<a href="<?php the_permalink(); ?>">
+							<dt><?= get_the_date(); ?></dt>
+							<dd><?= get_the_title(); ?></dd>
+						</a>
+					</dl>
+			<?php endwhile;
+			endif; ?>
+		</div>
 	</div>
 </section>
 

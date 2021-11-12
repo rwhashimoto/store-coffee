@@ -4,6 +4,15 @@
 	<div class="l-main-section-visual location">
 		<h1 class="l-main-title">LOCATION</h1>
 	</div>
+
+	<div class="breadcrumb-area">
+		<?php
+		if (function_exists('bcn_display')) {
+			bcn_display();
+		}
+		?>
+	</div>
+
 	<div class="content">
 		<div class="lead-sentence"><?php the_content(); ?></div>
 		<div class="content-flex">
