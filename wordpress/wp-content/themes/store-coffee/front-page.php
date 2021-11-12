@@ -86,7 +86,6 @@
 					?>
 								<dt class="product"><?= get_the_title(); ?></dt>
 								<dd class="price">&yen;<?= $menu_price ?></dd>
-
 					<?php endwhile;
 					endif; ?>
 				</dl>
