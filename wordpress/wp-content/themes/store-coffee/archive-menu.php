@@ -21,13 +21,13 @@
 					$menu_price = get_field('price');
 					$cat = get_field('menu-category');
 			?>
-					<li class="menu-item">
-						<?php if ($cat == 'coffee') : ?>
+					<?php if ($cat == 'coffee') : ?>
+						<li class="menu-item">
 							<figure class="thumbnail"><img src="<?= $thumbnail ?>" alt=""></figure>
 							<p class="title"><?= get_the_title(); ?></p>
 							<p class="price">&yen;<?= $menu_price ?></p>
-						<?php endif; ?>
-					</li>
+						</li>
+					<?php endif; ?>
 			<?php endwhile;
 			endif;
 			wp_reset_postdata(); ?>
@@ -48,13 +48,13 @@
 					$menu_price = get_field('price');
 					$cat = get_field('menu-category');
 			?>
-					<li class="menu-item">
-						<?php if ($cat == 'food') : ?>
+					<?php if ($cat == 'food') : ?>
+						<li class="menu-item">
 							<figure class="thumbnail"><img src="<?= $thumbnail ?>" alt=""></figure>
 							<p class="title"><?= get_the_title(); ?></p>
 							<p class="price">&yen;<?= $menu_price ?></p>
-						<?php endif; ?>
-					</li>
+						</li>
+					<?php endif; ?>
 			<?php endwhile;
 			endif;
 			wp_reset_postdata(); ?>
@@ -75,13 +75,13 @@
 					$menu_price = get_field('price');
 					$cat = get_field('menu-category');
 			?>
-					<li class="menu-item">
-						<?php if ($cat == 'other') : ?>
+					<?php if ($cat == 'other') : ?>
+						<li class="menu-item">
 							<figure class="thumbnail"><img src="<?= $thumbnail ?>" alt=""></figure>
 							<p class="title"><?= get_the_title(); ?></p>
 							<p class="price">&yen;<?= $menu_price ?></p>
-						<?php endif; ?>
-					</li>
+						</li>
+					<?php endif; ?>
 			<?php endwhile;
 			endif;
 			wp_reset_postdata(); ?>
