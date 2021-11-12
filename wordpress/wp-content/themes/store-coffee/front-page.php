@@ -108,23 +108,24 @@
 		<div class="content">
 			<div class="news-list">
 				<?php
-				$args = array(
-					'post_type' => 'news',
-					'posts_per_page' => 3,
-				);
-				$news_query = new WP_Query($args);
-				if ($news_query->have_posts()) :
-					while ($news_query->have_posts()) :
-						$news_query->the_post();
+					$args = array(
+						'post_type' => 'news',
+						'posts_per_page' => 3,
+					);
+					$news_query = new WP_Query($args);
+					if ($news_query->have_posts()) :
+						while ($news_query->have_posts()) :
+							$news_query->the_post();
 				?>
-						<dl>
+					<dl>
+						<a href="<?php the_permalink(); ?>">
 							<dt><?= get_the_date(); ?></dt>
 							<dd><?= get_the_title(); ?></dd>
-						</dl>
-				<?php endwhile;
-				endif; ?>
+						</a>
+					</dl>
+				<?php endwhile; endif; ?>
 			</div>
-			<a href="<?= home_url('/news/'); ?>" target="_blank" class="btn-more">Read More</a>
+			<a href="<?= home_url('/news/'); ?>" class="btn-more">Read More</a>
 		</div>
 	</section><!-- /.l-main-location -->
 </main>
