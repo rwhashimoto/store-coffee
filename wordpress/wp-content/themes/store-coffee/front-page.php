@@ -38,13 +38,12 @@
 					<?php
 					$args = array(
 						'post_type' => 'menu',
-						'posts_per_page' => 3,
+						'posts_per_page' => 10,
 					);
 					$menu_query = new WP_Query($args);
 					if ($menu_query->have_posts()) :
 						while ($menu_query->have_posts()) :
 							$menu_query->the_post();
-							$thumbnail = get_field('thumbnail');
 							$menu_price = get_field('price');
 							$cat = get_field('menu-category');
 					?>
@@ -60,7 +59,7 @@
 					<?php
 					$args = array(
 						'post_type' => 'menu',
-						'posts_per_page' => 3,
+						'posts_per_page' => 10,
 					);
 					$menu_query = new WP_Query($args);
 					if ($menu_query->have_posts()) :
@@ -78,6 +77,7 @@
 				</dl>
 			</div><!-- .content.right -->
 		</div><!-- .content-wrapper -->
+		<a href="<?= home_url('/menu/'); ?>" target="_blank" class="btn-more">Read More</a>
 	</section><!-- .l-main-menu-->
 
 	<section id="about" class="l-main-about">
