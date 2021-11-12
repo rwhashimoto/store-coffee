@@ -904,9 +904,7 @@ a {
 }
 .archive-menu .menu-item {
   list-style: none;
-  background-color: red;
   width: 209px;
-  box-sizing: border-box;
 }
 .archive-menu .menu-item .thumbnail {
   width: 100%;
@@ -917,6 +915,14 @@ a {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.archive-menu .menu-item .title {
+  margin: 27px 0 0;
+  font-size: 1.4rem;
+}
+.archive-menu .menu-item .price {
+  margin: 10px 0 0;
+  font-size: 1.44rem;
 }
 
 .archive-news {
