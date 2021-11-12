@@ -38,7 +38,7 @@
 					<?php
 					$args = array(
 						'post_type' => 'menu',
-						'posts_per_page' => 10,
+						'posts_per_page' => 3,
 					);
 					$menu_query = new WP_Query($args);
 					if ($menu_query->have_posts()) :
@@ -60,7 +60,7 @@
 					<?php
 					$args = array(
 						'post_type' => 'menu',
-						'posts_per_page' => 10,
+						'posts_per_page' => 3,
 					);
 					$menu_query = new WP_Query($args);
 					if ($menu_query->have_posts()) :
