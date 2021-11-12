@@ -21,3 +21,5 @@ node_modules/
 *.log
 *.sql
 *.sqlite
+
+wp-content/themes/store-coffee/assets/css/colors.css

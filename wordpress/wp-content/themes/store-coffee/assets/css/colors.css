@@ -8,10 +8,10 @@ body {
 
 /* Links */
 a {
-  color: #0073aa;
+  color: #3858e9;
 }
 a:hover, a:active, a:focus {
-  color: #0096dd;
+  color: #183ad6;
 }
 
 #post-body .misc-pub-post-status:before,
@@ -23,10 +23,10 @@ span.wp-media-buttons-icon:before {
 }
 
 .wp-core-ui .button-link {
-  color: #0073aa;
+  color: #3858e9;
 }
 .wp-core-ui .button-link:hover, .wp-core-ui .button-link:active, .wp-core-ui .button-link:focus {
-  color: #0096dd;
+  color: #183ad6;
 }
 
 .media-modal .delete-attachment,
@@ -58,7 +58,7 @@ input[type=radio]:checked::before {
 
 .wp-core-ui input[type=reset]:hover,
 .wp-core-ui input[type=reset]:active {
-  color: #0096dd;
+  color: #183ad6;
 }
 
 input[type=text]:focus,
@@ -639,7 +639,7 @@ div#wp-responsive-toggle a:before {
 .wp-core-ui #customize-controls .customize-info.open.active-menu-screen-options .customize-help-toggle:hover,
 .wp-core-ui #customize-controls .customize-info.open.active-menu-screen-options .customize-help-toggle:active,
 .wp-core-ui #customize-controls .customize-info.open.active-menu-screen-options .customize-help-toggle:focus {
-  color: #0073aa;
+  color: #3858e9;
 }
 .wp-core-ui .customize-screen-options-toggle:focus:before,
 .wp-core-ui #customize-controls .customize-info .customize-help-toggle:focus:before, .wp-core-ui.wp-customizer button:focus .toggle-indicator:before,
@@ -652,7 +652,7 @@ div#wp-responsive-toggle a:before {
 .wp-core-ui #customize-controls .customize-info.open .customize-help-toggle,
 .wp-core-ui #customize-controls .customize-info .customize-help-toggle:focus,
 .wp-core-ui #customize-controls .customize-info .customize-help-toggle:hover {
-  color: #0073aa;
+  color: #3858e9;
 }
 .wp-core-ui .control-panel-themes .customize-themes-section-title:focus,
 .wp-core-ui .control-panel-themes .customize-themes-section-title:hover {
@@ -663,7 +663,7 @@ div#wp-responsive-toggle a:before {
   background: #e14d43;
 }
 .wp-core-ui .control-panel-themes .customize-themes-section-title.selected {
-  color: #0073aa;
+  color: #3858e9;
 }
 .wp-core-ui #customize-theme-controls .control-section:hover > .accordion-section-title:after,
 .wp-core-ui #customize-theme-controls .control-section .accordion-section-title:hover:after,
@@ -673,7 +673,7 @@ div#wp-responsive-toggle a:before {
 .wp-core-ui #customize-outer-theme-controls .control-section .accordion-section-title:hover:after,
 .wp-core-ui #customize-outer-theme-controls .control-section.open .accordion-section-title:after,
 .wp-core-ui #customize-outer-theme-controls .control-section .accordion-section-title:focus:after {
-  color: #0073aa;
+  color: #3858e9;
 }
 .wp-core-ui .customize-control .attachment-media-view .button-add-media:focus {
   background-color: #fbfbfc;

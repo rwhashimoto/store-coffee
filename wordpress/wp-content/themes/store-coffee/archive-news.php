@@ -9,7 +9,7 @@
 			<?php
 				$args = array(
 				'post_type' => 'news',
-				'posts_per_page' => 10,
+				'posts_per_page' => -1,
 				);
 				$news_query = new WP_Query($args);
 				if($news_query->have_posts()):
@@ -17,12 +17,14 @@
 				$news_query->the_post();
 			?>
 			<dl>
-				<dt><?= get_the_date(); ?></dt>
-				<dd><a href="<?php the_permalink(); ?>"><?= get_the_title(); ?></a></dd>
+				<a href="<?php the_permalink(); ?>">
+					<dt><?= get_the_date(); ?></dt>
+					<dd><?= get_the_title(); ?></dd>
+				</a>
 			</dl>
 			<?php endwhile; endif; ?>
         </div>
 	</div>
-</section><!-- /.l-main-news -->
+</section>
 
 <?php get_footer(); ?>
