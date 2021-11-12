@@ -31,7 +31,7 @@
 			wp_reset_postdata(); ?>
 		</ul>
 
-		<h2 class="l-main-heading">food</h2>
+		<h2 class="l-main-heading">FOOD</h2>
 		<ul class="menu-items">
 			<?php
 			$args = array(
@@ -56,7 +56,7 @@
 			wp_reset_postdata(); ?>
 		</ul>
 
-		<h2 class="l-main-heading">other</h2>
+		<h2 class="l-main-heading">OTHER</h2>
 		<ul class="menu-items">
 			<?php
 			$args = array(
