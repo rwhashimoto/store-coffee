@@ -470,6 +470,7 @@ a {
 }
 .l-main-menu {
   margin: 20px 0 0;
+  text-align: center;
 }
 @media screen and (max-width: 768px) {
   .l-main-menu {
@@ -480,7 +481,7 @@ a {
   display: flex;
   justify-content: space-between;
   max-width: 1000px;
-  margin: 0 auto;
+  margin: 0 auto 50px;
   padding: 0 16px;
 }
 @media screen and (max-width: 768px) {
@@ -489,6 +490,7 @@ a {
   }
 }
 .l-main-menu .content {
+  min-height: 647px;
   text-align: center;
 }
 .l-main-menu .content:first-of-type {
@@ -500,6 +502,7 @@ a {
 @media screen and (max-width: 768px) {
   .l-main-menu .content:first-of-type {
     width: 100%;
+    min-height: 0;
     margin: 33px 0 0;
     padding: 0;
   }
@@ -526,6 +529,7 @@ a {
 @media screen and (max-width: 768px) {
   .l-main-menu .content:last-of-type {
     width: 100%;
+    min-height: 0;
     margin: 45px 0 0;
     padding: 0;
   }

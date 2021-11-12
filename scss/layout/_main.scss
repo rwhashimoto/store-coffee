@@ -83,6 +83,7 @@
 
     &-menu {//.l-main-menu
         margin: 20px 0 0;
+        text-align: center;
         @include media-sp {
             margin: 10px 0 0;
         }
@@ -90,13 +91,14 @@
             display: flex;
             justify-content: space-between;
             max-width: 1000px;
-            margin: 0 auto;
+            margin: 0 auto 50px;
             padding: 0 16px;
             @include media-sp {
                 flex-direction: column;
             }
         }
         .content {
+            min-height: 647px;
             text-align: center;
             &:first-of-type {
                 width: 51%;
@@ -105,6 +107,7 @@
                 position: relative;
                 @include media-sp{
                     width: 100%;
+                    min-height: 0;
                     margin: 33px 0 0;
                     padding: 0;
                 }
@@ -127,6 +130,7 @@
                 padding: 0 34px 35px 33px;
                 @include media-sp{
                     width: 100%;
+                    min-height: 0;
                     margin: 45px 0 0;
                     padding: 0;
                 }
