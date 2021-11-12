@@ -854,6 +854,34 @@ a {
   }
 }
 
+.breadcrumb-area {
+  max-width: 1000px;
+  margin: 10px auto 0;
+  font-family: "Helvetica Neue", "Arial", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+  font-size: 1rem;
+  color: #000;
+  text-transform: uppercase;
+}
+.breadcrumb-area a {
+  font-family: "Helvetica Neue", "Arial", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+  font-size: 1rem;
+  color: #000;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 769px) {
+  .breadcrumb-area a {
+    transition: all ease-in-out 0.2s;
+  }
+  .breadcrumb-area a:hover {
+    color: #E03131;
+  }
+}
+@media screen and (max-width: 768px) {
+  .breadcrumb-area {
+    padding: 0 16px;
+  }
+}
+
 .archive-news {
   margin: 0;
 }

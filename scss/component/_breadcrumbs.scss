@@ -1,0 +1,23 @@
+.breadcrumb-area {
+    max-width: 1000px;
+    margin: 10px auto 0;
+    font-family: $font-family;
+    font-size: 1.0rem;
+    color: $main-color;
+    text-transform: uppercase;
+    a {
+        font-family: $font-family;
+        font-size: 1.0rem;
+        color: $main-color;
+        text-transform: uppercase;
+        @include media-pc {
+            transition: all ease-in-out 0.2s;
+            &:hover {
+                color: $accent-color;
+            }
+        }
+    }
+    @include media-sp {
+        padding: 0 16px
+    }
+}
