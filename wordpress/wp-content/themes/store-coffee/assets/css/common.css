@@ -860,13 +860,15 @@ a {
   font-family: "Helvetica Neue", "Arial", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
   font-size: 1rem;
   color: #000;
+}
+.breadcrumb-area .post-news-archive,
+.breadcrumb-area .post-menu-archive {
   text-transform: uppercase;
 }
 .breadcrumb-area a {
   font-family: "Helvetica Neue", "Arial", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
   font-size: 1rem;
   color: #000;
-  text-transform: uppercase;
 }
 @media screen and (min-width: 769px) {
   .breadcrumb-area a {

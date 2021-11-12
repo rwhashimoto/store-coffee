@@ -4,12 +4,14 @@
     font-family: $font-family;
     font-size: 1.0rem;
     color: $main-color;
-    text-transform: uppercase;
+    .post-news-archive,
+    .post-menu-archive {
+        text-transform: uppercase;
+    }
     a {
         font-family: $font-family;
         font-size: 1.0rem;
         color: $main-color;
-        text-transform: uppercase;
         @include media-pc {
             transition: all ease-in-out 0.2s;
             &:hover {
