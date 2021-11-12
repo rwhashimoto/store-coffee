@@ -1,0 +1,30 @@
+.single-news {
+    margin: 0;
+    @include media-sp {
+        margin: 0;
+    }
+    .content {
+        max-width: 1000px;
+        min-height: calc(100vh - 603px);
+        margin: 100px auto 0;
+        padding: 0 16px;
+        text-align: center;
+        @include media-sp {
+            margin: 33px 0 0;
+        }
+        .title {
+            font-size: 6.0rem;
+            font-weight: bold;
+            text-align: left;
+        }
+        .date {
+            margin: 20px 0 0;
+            font-size: 1.4rem;
+            text-align: left;
+        }
+        .entry-field{
+            margin: 0 0 50px;
+            text-align: left;
+        }
+    }
+}

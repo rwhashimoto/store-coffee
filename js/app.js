@@ -1,26 +1,26 @@
-$(function(){//smooth scroll
-    $('a[href^="#"]').click(function(){
+jQuery(function(){//smooth scroll
+    jQuery('a[href^="#"]').click(function(){
       var speed = 500;
-      var href= $(this).attr("href");
-      var target = $(href == "#" || href == "" ? 'html' : href);
+      var href= jQuery(this).attr("href");
+      var target = jQuery(href == "#" || href == "" ? 'html' : href);
       var position = target.offset().top;
-      $("html, body").animate({scrollTop:position}, speed, "swing");
+      jQuery("html, body").animate({scrollTop:position}, speed, "swing");
       return false;
     });
   });
 
-$(function () {//page top
-  var pagetop = $('#top-btn');
+jQuery(function () {//page top
+  var pagetop = jQuery('#top-btn');
   pagetop.hide();
-  $(window).scroll(function () {
-    if ($(this).scrollTop() > 500) {
+  jQuery(window).scroll(function () {
+    if (jQuery(this).scrollTop() > 500) {
       pagetop.fadeIn();
     } else {
       pagetop.fadeOut();
     }
   });
   pagetop.click(function () {
-    $('body, html').animate({
+    jQuery('body, html').animate({
         scrollTop: 0
     }, 500);
     return false;
