@@ -12,6 +12,7 @@
 			$args = array(
 				'post_type' => 'menu',
 				'posts_per_page' => -1,
+				'category_name' => 'coffee'
 			);
 			$menu_query = new WP_Query($args);
 			if ($menu_query->have_posts()) :
@@ -19,15 +20,12 @@
 					$menu_query->the_post();
 					$thumbnail = get_field('thumbnail');
 					$menu_price = get_field('price');
-					$cat = get_field('menu-category');
 			?>
-					<?php if ($cat == 'coffee') : ?>
-						<li class="menu-item">
-							<figure class="thumbnail"><img src="<?= $thumbnail ?>" alt=""></figure>
-							<p class="title"><?= get_the_title(); ?></p>
-							<p class="price">&yen;<?= $menu_price ?></p>
-						</li>
-					<?php endif; ?>
+					<li class="menu-item">
+						<figure class="thumbnail"><img src="<?= $thumbnail ?>" alt=""></figure>
+						<p class="title"><?= get_the_title(); ?></p>
+						<p class="price">&yen;<?= $menu_price ?></p>
+					</li>
 			<?php endwhile;
 			endif;
 			wp_reset_postdata(); ?>
@@ -39,6 +37,7 @@
 			$args = array(
 				'post_type' => 'menu',
 				'posts_per_page' => -1,
+				'category_name' => 'food'
 			);
 			$menu_query = new WP_Query($args);
 			if ($menu_query->have_posts()) :
@@ -46,15 +45,12 @@
 					$menu_query->the_post();
 					$thumbnail = get_field('thumbnail');
 					$menu_price = get_field('price');
-					$cat = get_field('menu-category');
 			?>
-					<?php if ($cat == 'food') : ?>
-						<li class="menu-item">
-							<figure class="thumbnail"><img src="<?= $thumbnail ?>" alt=""></figure>
-							<p class="title"><?= get_the_title(); ?></p>
-							<p class="price">&yen;<?= $menu_price ?></p>
-						</li>
-					<?php endif; ?>
+					<li class="menu-item">
+						<figure class="thumbnail"><img src="<?= $thumbnail ?>" alt=""></figure>
+						<p class="title"><?= get_the_title(); ?></p>
+						<p class="price">&yen;<?= $menu_price ?></p>
+					</li>
 			<?php endwhile;
 			endif;
 			wp_reset_postdata(); ?>
@@ -66,6 +62,7 @@
 			$args = array(
 				'post_type' => 'menu',
 				'posts_per_page' => -1,
+				'category_name' => 'other'
 			);
 			$menu_query = new WP_Query($args);
 			if ($menu_query->have_posts()) :
@@ -73,15 +70,12 @@
 					$menu_query->the_post();
 					$thumbnail = get_field('thumbnail');
 					$menu_price = get_field('price');
-					$cat = get_field('menu-category');
 			?>
-					<?php if ($cat == 'other') : ?>
-						<li class="menu-item">
-							<figure class="thumbnail"><img src="<?= $thumbnail ?>" alt=""></figure>
-							<p class="title"><?= get_the_title(); ?></p>
-							<p class="price">&yen;<?= $menu_price ?></p>
-						</li>
-					<?php endif; ?>
+					<li class="menu-item">
+						<figure class="thumbnail"><img src="<?= $thumbnail ?>" alt=""></figure>
+						<p class="title"><?= get_the_title(); ?></p>
+						<p class="price">&yen;<?= $menu_price ?></p>
+					</li>
 			<?php endwhile;
 			endif;
 			wp_reset_postdata(); ?>
