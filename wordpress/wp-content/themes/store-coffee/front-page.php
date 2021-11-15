@@ -106,7 +106,7 @@
 			<h2 class="l-main-title">NEWS</h2>
 		</div>
 		<div class="content">
-			<div class="news-list">
+			<div class="list-items">
 				<?php
 					$args = array(
 						'post_type' => 'news',
@@ -117,12 +117,12 @@
 						while ($news_query->have_posts()) :
 							$news_query->the_post();
 				?>
-					<dl>
-						<a href="<?php the_permalink(); ?>">
-							<dt><?= get_the_date(); ?></dt>
-							<dd><?= get_the_title(); ?></dd>
-						</a>
-					</dl>
+					<a class="list-item" href="<?php the_permalink(); ?>">
+						<dl>
+								<dt><?= get_the_date(); ?></dt>
+								<dd><?= get_the_title(); ?></dd>
+						</dl>
+					</a>
 				<?php endwhile; endif; ?>
 			</div>
 			<a href="<?= home_url('/news/'); ?>" class="btn-more">Read More</a>

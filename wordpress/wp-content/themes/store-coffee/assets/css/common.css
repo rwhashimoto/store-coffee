@@ -705,29 +705,43 @@ a {
     margin: 33px 0 0;
   }
 }
-.l-main-news .news-list {
+.l-main-news .list-items {
   text-align: left;
   margin-bottom: 50px;
 }
-.l-main-news .news-list dl {
-  position: relative;
-  border-bottom: solid 1.5px #707070;
-  padding: 0px;
-}
-.l-main-news .news-list dl:first-of-type {
-  border-top: solid 1.5px #707070;
-}
-.l-main-news .news-list dl a {
+.l-main-news .list-items .list-item {
   display: block;
   color: #000;
-  padding: 37px;
+  border-bottom: solid 1.5px #707070;
+}
+.l-main-news .list-items .list-item:first-of-type {
+  border-top: solid 1.5px #707070;
 }
 @media screen and (max-width: 768px) {
-  .l-main-news .news-list dl a {
+  .l-main-news .list-items .list-item {
     padding: 18.5px;
   }
 }
-.l-main-news .news-list dl a::before {
+@media screen and (min-width: 769px) {
+  .l-main-news .list-items .list-item {
+    transition: all ease-in-out 0.3s;
+  }
+  .l-main-news .list-items .list-item:hover {
+    color: #E03131;
+  }
+  .l-main-news .list-items .list-item:hover::before {
+    border-top: 1px solid #E03131;
+    border-right: 1px solid #E03131;
+  }
+  .l-main-news .list-items .list-item:hover::after {
+    background: #E03131;
+  }
+}
+.l-main-news .list-items .list-item dl {
+  position: relative;
+  padding: 37px;
+}
+.l-main-news .list-items .list-item dl::before {
   content: "";
   margin: auto;
   position: absolute;
@@ -740,7 +754,7 @@ a {
   border-right: 1px solid #000;
   transform: rotate(45deg);
 }
-.l-main-news .news-list dl a::after {
+.l-main-news .list-items .list-item dl::after {
   content: "";
   margin: auto;
   position: absolute;
@@ -752,26 +766,11 @@ a {
   background: #000;
   transform: rotate(90deg);
 }
-@media screen and (min-width: 769px) {
-  .l-main-news .news-list dl a {
-    transition: all ease-in-out 0.3s;
-  }
-  .l-main-news .news-list dl a:hover {
-    color: #E03131;
-  }
-  .l-main-news .news-list dl a:hover::before {
-    border-top: 1px solid #E03131;
-    border-right: 1px solid #E03131;
-  }
-  .l-main-news .news-list dl a:hover::after {
-    background: #E03131;
-  }
-}
-.l-main-news .news-list dl dt {
+.l-main-news .list-items .list-item dl dt {
   font-size: 1.4rem;
   font-weight: bold;
 }
-.l-main-news .news-list dl dd {
+.l-main-news .list-items .list-item dl dd {
   padding: 10px 0 0;
   font-size: 1.4rem;
   font-weight: bold;
