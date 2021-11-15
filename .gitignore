@@ -22,4 +22,8 @@ node_modules/
 *.sql
 *.sqlite
 
-wp-content/themes/store-coffee/assets/css/colors.css
+**/wp-content/themes/store-coffee/assets/css/colors.css
+**/wp-content/languages
+**/wp-content/uploads
+**/wp-content/upgrade
+**/wp-content/plugins

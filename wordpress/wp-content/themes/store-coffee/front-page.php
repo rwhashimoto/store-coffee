@@ -12,49 +12,86 @@
 			<div class="content">
 				<h3 class="l-main-heading">COFFEE</h3>
 				<dl class="menu-list">
-					<dt class="product">XXXXXXXX</dt>
-					<dd class="price">&yen;500</dd>
-					<dt class="product">XXXXXXXX</dt>
-					<dd class="price">&yen;500</dd>
-					<dt class="product">XXXXXXXX</dt>
-					<dd class="price">&yen;500</dd>
-					<dt class="product">XXXXXXXX</dt>
-					<dd class="price">&yen;500</dd>
-					<dt class="product">XXXXXXXX</dt>
-					<dd class="price">&yen;500</dd>
-					<dt class="product">XXXXXXXX</dt>
-					<dd class="price">&yen;500</dd>
-					<dt class="product">XXXXXXXX</dt>
-					<dd class="price">&yen;500</dd>
-					<dt class="product">XXXXXXXX</dt>
-					<dd class="price">&yen;500</dd>
-					<dt class="product">XXXXXXXX</dt>
-					<dd class="price">&yen;500</dd>
-					<dt class="product">XXXXXXXX</dt>
-					<dd class="price">&yen;500</dd>
+					<?php
+					$args = array(
+						'post_type' => 'menu',
+						'posts_per_page' => 10,
+						'category_name' => 'coffee'
+					);
+					$menu_query = new WP_Query($args);
+					if ($menu_query->have_posts()) :
+						while ($menu_query->have_posts()) :
+							$menu_query->the_post();
+							$menu_price = get_field('price');
+					?>
+								<dt class="product"><?= get_the_title(); ?></dt>
+								<dd class="price">&yen;<?= $menu_price ?></dd>
+					<?php endwhile;
+					endif; ?>
 				</dl>
+				<!-- <dl class="menu-list"> プラグインで指定していた時
+					<?php
+					$args = array(
+						'post_type' => 'menu',
+						'posts_per_page' => 10,
+					);
+					$menu_query = new WP_Query($args);
+					if ($menu_query->have_posts()) :
+						while ($menu_query->have_posts()) :
+							$menu_query->the_post();
+							$menu_price = get_field('price');
+							$cat = get_field('menu-category');
+					?>
+							<?php if ($cat == 'coffee') : ?>
+								<dt class="product"><?= get_the_title(); ?></dt>
+								<dd class="price">&yen;<?= $menu_price ?></dd>
+							<?php endif; ?>
+					<?php endwhile;
+					endif; ?>
+				</dl> -->
 			</div><!-- .content.left -->
 			<div class="content">
 				<h3 class="l-main-heading">FOOD</h3>
 				<dl class="menu-list">
-					<dt class="product">XXXXXXXX</dt>
-					<dd class="price">&yen;500</dd>
-					<dt class="product">XXXXXXXX</dt>
-					<dd class="price">&yen;500</dd>
-					<dt class="product">XXXXXXXX</dt>
-					<dd class="price">&yen;500</dd>
-				</dl>
+					<?php
+							$args = array(
+								'post_type' => 'menu',
+								'posts_per_page' => 3,
+								'category_name' => 'food'
+							);
+							$menu_query = new WP_Query($args);
+							if ($menu_query->have_posts()) :
+								while ($menu_query->have_posts()) :
+									$menu_query->the_post();
+									$menu_price = get_field('price');
+							?>
+								<dt class="product"><?= get_the_title(); ?></dt>
+								<dd class="price">&yen;<?= $menu_price ?></dd>
+					<?php endwhile;
+							endif; ?>
+				</dl><!-- .menu-list -->
 				<h3 class="l-main-heading">OTHER</h3>
 				<dl class="menu-list">
-					<dt class="product">XXXXXXXX</dt>
-					<dd class="price">&yen;500</dd>
-					<dt class="product">XXXXXXXX</dt>
-					<dd class="price">&yen;500</dd>
-					<dt class="product">XXXXXXXX</dt>
-					<dd class="price">&yen;500</dd>
+					<?php
+					$args = array(
+						'post_type' => 'menu',
+						'posts_per_page' => 3,
+						'category_name' => 'other'
+					);
+					$menu_query = new WP_Query($args);
+					if ($menu_query->have_posts()) :
+						while ($menu_query->have_posts()) :
+							$menu_query->the_post();
+							$menu_price = get_field('price');
+					?>
+								<dt class="product"><?= get_the_title(); ?></dt>
+								<dd class="price">&yen;<?= $menu_price ?></dd>
+					<?php endwhile;
+					endif; ?>
 				</dl>
 			</div><!-- .content.right -->
 		</div><!-- .content-wrapper -->
+		<a href="<?= home_url('/menu/'); ?>" target="_blank" class="btn-more">Read More</a>
 	</section><!-- .l-main-menu-->
 
 	<section id="about" class="l-main-about">
