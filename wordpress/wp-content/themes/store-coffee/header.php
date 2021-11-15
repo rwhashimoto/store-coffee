@@ -19,9 +19,9 @@
 		<header class="l-header">
 			<nav>
 				<ul class="l-header-nav">
-					<li><a class="nav-item" href="#menu">MENU</a></li>
-					<li><a class="nav-item" href="#about">ABOUT</a></li>
-					<li><a class="nav-item" href="#location">LOCATION</a></li>
+					<li><a class="nav-item" href="<?= home_url('/menu/'); ?>">MENU</a></li>
+					<li><a class="nav-item" href="<?= home_url('/about/'); ?>">ABOUT</a></li>
+					<li><a class="nav-item" href="<?= home_url('/location/'); ?>">LOCATION</a></li>
 				</ul>
 			</nav>
 		</header>

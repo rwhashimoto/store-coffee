@@ -2,7 +2,7 @@
 
 <main class="l-main">
 	<section class="l-main-kv">
-		<h1 class="logo"><img src="<?= get_template_directory_uri(); ?>/assets/images/common/logo_001.svg" alt="COFFEE"></h1>
+		<h1 class="logo"><img src="<?= get_template_directory_uri(); ?>/assets/images/common/logo_001.svg" alt="COFFEE" width="460" height="100"></h1>
 	</section>
 	<section id="menu" class="l-main-menu">
 		<div class="l-main-section-visual menu">
@@ -99,22 +99,14 @@
 			<h2 class="l-main-title">ABOUT</h2>
 		</div>
 		<div class="content-wrapper">
-			<h3 class="l-main-heading">COFFEE</h3>
-			<div class="content">
-				<p class="text">
-					テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-				</p>
-				<p class="text">
-					テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-				</p>
-				<p class="text">
-					テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-				</p>
-				<p class="text">
-					テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-				</p>
-			</div><!-- /.content -->
-			<a href="DUMMY" target="_blank" class="btn-more">Read More</a>
+			<?php
+			$page_data = get_page_by_path('/about/coffee/');
+			$page = get_post($page_data);
+			$content = $page->post_content;
+			?>
+			<h3 class="l-main-heading"><?= get_the_title($page); ?></h3>
+			<div class="content"><?= $content; ?></div>
+			<a href="<?= home_url('/about/'); ?>" target="_blank" class="btn-more">Read More</a>
 		</div><!-- /.content-wrapper -->
 	</section><!-- /.l-man-about -->
 
@@ -124,18 +116,25 @@
 		</div>
 		<div class="content">
 			<h3 class="l-main-heading">OUR STORE</h3>
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3242.3141167384097!2d139.70497506554915!3d35.6446317802028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b40ba660b1b%3A0x8858088b6942f55f!2z44CSMTUwLTAwMjIg5p2x5Lqs6YO95riL6LC35Yy65oG15q-U5a-_5Y2X!5e0!3m2!1sja!2sjp!4v1631173724943!5m2!1sja!2sjp" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-			<address>
-				<p>
-					X-XX-XX, Ebisuminami, Shibuya-ku, Tokyo 150-0022<br>
-					東京都渋谷区恵比寿南X-XX-XX
-				</p>
-				<p>
-					Open 7 days a Week<br>
-					9:00am to 10:00pm
-				</p>
-				<a href="tel:XX-XXXX-XXXX">Tel : XX-XXXX-XXXX</a>
-			</address>
+			<div class="content-flex">
+				<figure class="info-img">
+					<img src="<?= get_template_directory_uri(); ?>/assets/images/location_001.jpg" alt="location_001" width="484" height="407">
+				</figure>
+				<div class="info-text">
+					<address>
+						<p>
+							X-XX-XX, Ebisuminami, Shibuya-ku, Tokyo 150-0022<br>
+							東京都渋谷区恵比寿南X-XX-XX
+						</p>
+						<p>
+							Open 7 days a Week<br>
+							9:00am to 10:00pm
+						</p>
+						<a href="tel:XX-XXXX-XXXX">Tel : XX-XXXX-XXXX</a>
+					</address>
+					<a href="https://www.google.com/maps?ll=35.644632,139.707164&z=16&t=m&hl=ja&gl=JP&mapclient=embed&q=%E6%81%B5%E6%AF%94%E5%AF%BF%E5%8D%97+%E3%80%92150-0022+%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%8B%E8%B0%B7%E5%8C%BA" target="_blank" class="btn-more">Google Map</a>
+				</div>
+			</div>
 		</div>
 	</section><!-- /.l-main-location -->
 
@@ -146,27 +145,26 @@
 		<div class="content">
 			<div class="news-list">
 				<?php
-				$args = array(
-					'post_type' => 'news',
-					'posts_per_page' => 3,
-				);
-				$news_query = new WP_Query($args);
-				if ($news_query->have_posts()) :
-					while ($news_query->have_posts()) :
-						$news_query->the_post();
+					$args = array(
+						'post_type' => 'news',
+						'posts_per_page' => 3,
+					);
+					$news_query = new WP_Query($args);
+					if ($news_query->have_posts()) :
+						while ($news_query->have_posts()) :
+							$news_query->the_post();
 				?>
-						<dl>
-							<a href="<?php the_permalink(); ?>">
-								<dt><?= get_the_date(); ?></dt>
-								<dd><?= get_the_title(); ?></dd>
-							</a>
-						</dl>
-				<?php endwhile;
-				endif; ?>
+					<dl>
+						<a href="<?php the_permalink(); ?>">
+							<dt><?= get_the_date(); ?></dt>
+							<dd><?= get_the_title(); ?></dd>
+						</a>
+					</dl>
+				<?php endwhile; endif; ?>
 			</div>
-			<a href="<?php echo home_url('/news/'); ?>" class="btn-more">Read More</a>
+			<a href="<?= home_url('/news/'); ?>" class="btn-more">Read More</a>
 		</div>
-	</section><!-- /.l-main-news -->
+	</section><!-- /.l-main-location -->
 </main>
 
 <?php get_footer(); ?>

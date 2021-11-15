@@ -1,0 +1,21 @@
+.page-about {
+    margin: 0;
+    @include media-sp {
+        margin: 0;
+    }
+    .l-main-heading {//.l-main-heading
+        margin: 87px 0 0;
+        &:first-of-type {
+            margin: 0;
+        }
+        @include media-sp {
+            margin: 30px 0 0;
+        }
+    }
+    .content-wrapper {
+        margin: 90px auto 0;
+        @include media-sp {
+            margin: 45px auto 0;
+        }
+    }
+}
