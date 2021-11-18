@@ -5,6 +5,14 @@
 		<h2 class="l-main-title">ABOUT</h2>
 	</div>
 
+	<div class="breadcrumb-area">
+		<?php
+		if (function_exists('bcn_display')) {
+			bcn_display();
+		}
+		?>
+	</div>
+
 	<div class="content-wrapper">
 		<?php
 		$page_data = get_page_by_path('/about/coffee/');
