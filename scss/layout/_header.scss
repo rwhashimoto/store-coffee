@@ -1,4 +1,13 @@
 .l-header {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background: url(../images/head-kv_001.jpg);
+    background-size: cover;
+    background-position: center;
+    @include media-sp {
+        background-position: 47% center;
+    }
     &-nav {//.l-header-nev
         display: flex;
         list-style: none;
@@ -7,7 +16,6 @@
         right: 32px;
         max-width: 245px;
         width: 100%;
-        z-index: 1;
         @include media-sp {
             top: 20px;
         }
@@ -23,6 +31,23 @@
                     color: $accent-color;
                 }
             }
+        }
+    }
+    &-logo {//.l-header-logo
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 25%;
+        height: auto;
+        @include media-sp {
+            top: 45%;
+            width: 90%;
+        }
+        img {
+            width: 100%;
+            height: auto;
+            vertical-align: top;
         }
     }
 }
