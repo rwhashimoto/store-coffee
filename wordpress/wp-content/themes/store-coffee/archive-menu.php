@@ -5,6 +5,14 @@
 		<h1 class="l-main-title">menu</h1>
 	</div>
 
+	<div class="breadcrumb-area">
+		<?php
+		if (function_exists('bcn_display')) {
+			bcn_display();
+		}
+		?>
+	</div>
+
 	<div class="content">
 		<h2 class="l-main-heading">COFFEE</h2>
 		<ul class="menu-items">
